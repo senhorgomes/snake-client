@@ -34,16 +34,16 @@ const setupInput = function(conn) {
       //}, 500)
     }
     if (key === 't') {
-      conn.write("Hey!");
+      conn.write("Say: Hey!");
     }
     if (key === 'y') {
-      conn.write("Nice moves!");
+      conn.write("Say: Nice moves!");
     }
     if (key === 'u') {
-      conn.write("Gotcha!");
+      conn.write("Say: Gotcha!");
     }
     if (key === 'i') {
-      conn.write("Oh no!");
+      conn.write("Say: Oh no!");
     }
   })
   return stdin;
