@@ -33,6 +33,18 @@ const setupInput = function(conn) {
         conn.write("Move: right");
       //}, 500)
     }
+    if (key === 't') {
+      conn.write("Hey!");
+    }
+    if (key === 'y') {
+      conn.write("Nice moves!");
+    }
+    if (key === 'u') {
+      conn.write("Gotcha!");
+    }
+    if (key === 'i') {
+      conn.write("Oh no!");
+    }
   })
   return stdin;
 };
