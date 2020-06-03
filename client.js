@@ -13,6 +13,9 @@ const connect = () => {
   conn.on('connect', () => {
     console.log("Successfully connected to game server");
     conn.write('Name: BPG');
+    //setInterval(() => {
+    //  conn.write("Move: down");
+    //}, 500)
   });
   return conn;
 };
