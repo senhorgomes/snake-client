@@ -10,6 +10,18 @@ const setupInput = function() {
     if (key === '\u0003') {
       process.exit();
     }
+    if (key === 'w') {
+      console.log("up")
+    }
+    if (key === 's') {
+      console.log("down")
+    }
+    if (key === 'a') {
+      console.log("left")
+    }
+    if (key === 'd') {
+      console.log("right")
+    }
   })
   return stdin;
 };
