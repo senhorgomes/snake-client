@@ -1,5 +1,8 @@
 //Setup user interface to handle input
-const setupInput = function() {
+let connection;
+
+const setupInput = function(conn) {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
@@ -11,16 +14,24 @@ const setupInput = function() {
       process.exit();
     }
     if (key === 'w') {
-      console.log("up")
+      setInterval(() => {
+        conn.write("Move: up");
+      }, 500)
     }
     if (key === 's') {
-      console.log("down")
+      setInterval(() => {
+        conn.write("Move: down");
+      }, 500)
     }
     if (key === 'a') {
-      console.log("left")
+      setInterval(() => {
+        conn.write("Move: left");
+      }, 500)
     }
     if (key === 'd') {
-      console.log("right")
+      setInterval(() => {
+        conn.write("Move: right");
+      }, 500)
     }
   })
   return stdin;
