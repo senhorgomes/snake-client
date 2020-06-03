@@ -14,24 +14,24 @@ const setupInput = function(conn) {
       process.exit();
     }
     if (key === 'w') {
-      setInterval(() => {
+      //setInterval(() => {
         conn.write("Move: up");
-      }, 500)
+      //}, 500)
     }
     if (key === 's') {
-      setInterval(() => {
+      //setInterval(() => {
         conn.write("Move: down");
-      }, 500)
+      //}, 500)
     }
     if (key === 'a') {
-      setInterval(() => {
+      //setInterval(() => {
         conn.write("Move: left");
-      }, 500)
+      //}, 500)
     }
     if (key === 'd') {
-      setInterval(() => {
+      //setInterval(() => {
         conn.write("Move: right");
-      }, 500)
+      //}, 500)
     }
   })
   return stdin;
